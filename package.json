@@ -1,0 +1,11 @@
+{
+  "name": "tutorial",
+  "version": "1.0.0",
+  "description": "newApp",
+  "main": "Array_methods.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Objects</title>
+        
+    </head>
+    <body>
+       <p id="demo"></p><br>
+       <p id="demo1"></p><br>
+       <script>
+        const ismail={"h1":"reddy","h23":"ismail","h3":"odeti","age":"28","mother":"khader"}
+          document.getElementById("demo").innerHTML=ismail.h1+"hallow";
+          
+    </script> 
+      <p id="demo1"></p>
+    <script>
+        const person= {};
+             person.name="ismail dude";
+         
+         document.getElementById("demo1").innerHTML=person.name;
+    </script>
+    <p id="demo2"></p>
+     <script>
+        const person1=new Object();
+             person1.name="ismail dude";
+          var x=person1;
+          //var x=y;
+          //var y=u;
+         document.getElementById("demo2").innerHTML=x.name;
+    </script>
+    <p id="Da"></p>
+    <script>
+       const object={
+         "name":"Reddy",
+         "age":"34",
+         "contact":"1234567890",
+         cars1:{
+            "name":"Cars1",
+            "color":"RED",
+            "color1":"grey",
+           },
+           bmw:{
+             "name":"hiiiiiiii",
+             "hallow":"nmmmmm"
+           }
+        
+       }
+       var h=document.getElementById("Da");
+        h.innerHTML=object["name"]+"is"+object.cars1["color"]+object.bmw.name;
+    </script>
+    </body>
+</html>

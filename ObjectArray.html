@@ -1,0 +1,75 @@
+<!DOCTYPE htm>
+<html>
+   <head>
+   <title>Object and Array</title>
+   </head>
+   <body>
+       <p id="demo"></p>
+       <script>
+            let Object={
+                first:"reddy",
+                second:"ismail",
+                age:38           
+             }
+             document.getElementById("demo").innerHTML=Object.first;  
+       </script>
+
+        <p id="demo1"></p>
+        <script>
+            let Object1={
+                first:"reddy",
+                second:"ismail",
+                age:38           
+             }
+             document.getElementById("demo1").innerHTML=Object1['age'];
+       </script>
+
+<p id="demo2"></p>
+<script>
+    let Object2={
+        first:"reddy",
+        second:"ismail",
+        age:38,
+        fu:function(){
+            return this.first+this.second;
+        }           
+     }
+     document.getElementById("demo2").innerHTML=Object2['fu']();
+</script>
+<p id="demo3"></p>
+<script>
+    const Object3={
+        first:"reddy",
+        second:"ismail",
+        age:38,
+                 
+     };
+     const Obj4={
+        first:"reddy 3",
+        second:"ismail 3",
+        age:38,
+        fu:function(){
+            return this.first+this.second;
+        }  
+     }
+     document.getElementById("demo3").innerHTML=Obj4.fu();
+</script>
+
+               <!---->
+<p id="demo5"></p>
+<script>
+    let text="";
+    const Obj5={
+        first:"reddy 3",
+        second:"ismail 3",
+        age:38,
+       
+     }
+     for(let x in Obj5){
+         text+=Obj5[x]+"<br>";
+     }
+     document.getElementById("demo5").innerHTML=text;
+</script>
+
+   </body>
+</html>
