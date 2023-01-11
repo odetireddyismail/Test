@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Currying Function</title>
+</head>
+
+<body>
+    <!-- <script>
+        //Normal function
+
+        function _Is(a, b) {
+
+            const c = a + b
+
+            return c
+        }
+        console.log(_Is(10, 20))
+
+        //Currying function
+
+        function _a(a1) {
+
+            return _b = (b1) => {
+                return _c = (c1) => {
+
+                    return _d = (d1) => {
+                        return  d=a1+b1+c1+d1 
+
+                    }
+                }
+            }
+        }
+
+        console.log(_a(10)(20)(30)(40))
+    </script>
+
+    <script>
+        const _z=(original_amount)=>{
+
+         return _cu=(coupen)=>{
+            const _dis_amo=original_amount*coupen/100;
+            const total=original_amount - _dis_amo
+
+            return total;
+         }
+        }
+
+
+        const Is=_z(500);
+
+        console.log(Is(10))
+    </script> -->
+
+    <script>
+
+        const Ismail = (s) => {
+
+            return function b(g) {
+
+                return function n(p) {
+
+
+                    return s+g+p
+
+
+                }
+            }
+        }
+
+        const w = Ismail(1)
+        const f = w(2)
+
+        const d1 = f(null)
+        console.log(d1);
+
+    </script>
+
+    <script>
+       
+    var k
+     for(let i=0;i>0;i++){
+        return  k=k+i
+     }
+
+     console.log(k)
+    </script>
+</body>
+
+</html>

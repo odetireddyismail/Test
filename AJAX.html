@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AJAX</title>
+    </head>
+    <body>
+        
+
+        <p id="demo2">Hallow AJAX</p>
+        <button onclick="Ajax()">Click Ajax</button>
+
+        <script>
+            function Ajax(){
+                   let  http = new XMLHttpRequest();
+                
+                http.onreadystatechange=function(){
+                    if(this.readyState== 4 && this.status== 200){
+                        
+                        let data= this.responseText;
+                        console.log( data);
+                        //document.getElementById('demo2').innerHTML=this.responseText;
+                    }
+                   // return data;
+                }
+                http.open("GET","https://jsonplaceholder.typicode.com/todos",true);
+                http.send();
+               // document.getElementById('demo2').innerHTML=;
+               console.log(http.onreadystatechange())
+            }
+           
+        </script>
+    </body>
+</html>

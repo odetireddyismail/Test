@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+        For
+        </title>
+    </head>
+    <body>
+       
+       
+      <p id="demo"></p>
+        <!-- <script>
+       
+            var k=''
+             for(let i=0; i<=10; i++){
+                  
+                k+=i
+             }
+        
+             document.getElementById('demo').innerHTML='<img src="\Im\1.jpg" width="200px"/>'
+            </script> -->
+
+            <script>
+                let im=['\Im\1.jpg','\Im\2.jpg'];
+                let im1=['Java','Pyhon','javascript'];
+                 var k=' '
+                im1.map((a,b,c)=>{
+
+                    return k+=a+'<br>'
+
+                // console.log(b)
+                // document.getElementById('demo').innerHTML=[...a]
+                })
+                
+              // document.getElementById('demo').innerHTML=`<ul>
+                // <li>${k}</li></ul>`
+            </script>
+            <script>
+                let i=['Java','Pyhon','javascript','PHP']; 
+                var ele_i=0
+                 var ele;
+
+                function _I(){
+
+                      ele_i++
+                       ele.style.color='red'
+                       ele.style.opacity=0
+                    if(ele_i>(i.length-1)){
+                     ele_i=0;
+                      }
+                      setTimeout(Slide,1000);
+                
+                   }
+
+            
+                   
+               function Slide(){
+                ele.style.color='green'
+                ele.style.opacity=1
+                    ele.innerHTML=i[ele_i]
+                    setTimeout(_I,1000)
+               }
+
+               
+              
+            </script>
+            <h1 style="line-height: 310px;">
+            course=><span id="demo1"></span></h1>
+            <script>
+                ele=document.getElementById('demo1');
+                Slide()
+            </script>
+
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <title>Array&object Method</title>
+   </head>
+   <body>
+       <p id="A1"></p>
+       <script>
+           let x=this;
+           const person1 = {
+            firstName: "John",
+            lastName: "Doe",
+            id: 5566,
+               };
+               //const {firstName:hi,lastName}= person;
+              // console.log(hi,lastName);
+                console.log(x);
+    </script>
+    <p id="demo"> </p>
+    <script>
+       const person2 = {
+            firstName: "John2",
+            lastName: "Doe4",
+            id: 5566,
+            get:function(){
+                return this.firstName;
+            }
+               };
+               const person3 = {
+            firstName: "John1",
+            lastName: "Doe2",
+            id: 5566,
+               };
+        document.getElementById("demo").innerHTML=person3.firstName
+        ;
+        </script>
+   </body>
+</html>

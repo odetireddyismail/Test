@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        Array_methods
+    </title>
+    <style>
+        *{
+            margin: 0 auto;
+            padding: 0;
+        }
+        body{
+           
+            text-align: center;
+        }
+    </style>
+<br>
+
+<h2>JavaScript Array Methods</h2> 
+<h2>toString()</h2>
+<p>The toString() method returns an array as a comma separated string:</p>
+<h3>Converting Arrays to Strings</h3><br>
+<p id="demo"></p><br>
+<p id="joins"></p><br>
+
+
+<h3>Popping and Pushing</h3><br>
+<p id="pop"></p>
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.toString()
+</script>
+
+<script>
+    const joins = ["Banana", "Orange", "Apple", "Mango"];
+    document.getElementById("joins").innerHTML = joins.join('*+8')
+</script>
+
+<script>
+    const pop = ["Banana", "Orange", "Apple", "Mango"];
+    document.getElementById("pop").innerHTML = pop
+    pop.pop()
+    document.getElementById("pop").innerHTML = pop;
+     pop.push('Reddy Ismail')
+     document.getElementById("pop").innerHTML = pop.length;
+</script>
+
+</body>
+</html>

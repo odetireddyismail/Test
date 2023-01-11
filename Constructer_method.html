@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <title>Constructor_Method</title>
+   </head>
+   <body>
+       <!-- Constructor Method-->
+       <script>
+          class Student{
+              constructor(a1,a2){
+                 this.a=a1;
+                 this.b=a2
+                  document.write("Hallow this is Constructor")
+              }
+              hello(){
+                document.write("<br>"+`${this.a}${this.b}`);
+              }
+              static he(){
+                  document.write("<br>hallow this Static")
+              }
+          }
+          let a = new Student(10,20);
+          let c = new Student(10,220);
+         // let c1 = new Student(10,22222222220);
+          //a.name="hallow Name";
+        a.hello();
+            //a.Prototype();
+       // a.static hellow();
+            
+          c.hello();
+          Student. he();
+       </script>
+        
+   </body>
+</html>

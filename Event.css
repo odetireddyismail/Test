@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.parent {
+  background-color: aquamarine;
+  border: 1px solid rgb(17, 10, 10);
+  padding: 50px;
+  margin: 50px 20px;
+}
+.parent .child {
+  background-color: gray;
+  border: 1px solid red;
+  padding: 50px;
+}
+.parent .child .sub-chi {
+  border: 1px solid rgb(17, 10, 10);
+  background-color: antiquewhite;
+  padding: 50px;
+}/*# sourceMappingURL=Event.css.map */
